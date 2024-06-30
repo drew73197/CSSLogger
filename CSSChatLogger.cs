@@ -69,7 +69,7 @@ namespace CSSChatLogger
             {
                 Globals.Client_Text2[playerid] = message;
             }
-            string formattedMessage = $"{DateTime.Now:MM/dd/yyyy - HH:mm:ss.fff} - \"{vplayername}<{player.UserId}><{steamId3}><{player.Team}>\" say \"{message}\"";
+            string formattedMessage = $"RL {DateTime.Now:MM/dd/yyyy - HH:mm:ss.fff} - \"{vplayername}<{player.UserId}><{steamId3}><{player.Team}>\" say \"{message}\"";
             _logger.LogInformation($"Formatted message: {formattedMessage}");
 
             if (Configs.GetConfigData().UDPServerIP != null)
